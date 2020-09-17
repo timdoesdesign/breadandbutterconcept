@@ -56,4 +56,35 @@
       color: $white;
     }
   }
+
+  @include media-breakpoint-up(md) {
+    .active > .nav-link:before {
+      opacity: 1;
+    }
+
+    .nav-link {
+      transition: .3s;
+      position: relative;
+
+      &:before {
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: $cta-bg-color;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: .3s;
+      }
+
+      &:hover {
+          color: $tertiary;
+
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+  }
 }
