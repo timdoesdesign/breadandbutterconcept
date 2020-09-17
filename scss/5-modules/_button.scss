@@ -1,0 +1,21 @@
+.btn {
+  border-radius: 2px;
+  width: 8.75rem;
+  padding: .75rem 0;
+
+  @include media-breakpoint-up(md) {
+    width: 14.5rem;
+  }
+
+  &--bread-menu {
+    background-color: $cta-bg-color;
+    color: $white;
+    margin-right: 1rem;
+  }
+
+  &--cafe-menu {
+    background-color: $white;
+    color: $cta-bg-color;
+    margin-left: 1rem;
+  }
+}

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Open+Sans&display=swap');
+
+//font-family: 'Lato', sans-serif;
+//font-family: 'Open Sans', sans-serif;
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  @include media-breakpoint-up(lg) {
+    font-size: 2.5rem;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: 3rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.25rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.5rem;
+  }
+}
+
+.nav-item {
+  font-size: 1.25rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.home-inner {
+  .subtitle {
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 2rem;
+  }
+
+  .wrapper {
+    p:last-of-type {
+      @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+.about p {
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.7rem;
+  }
+}
+
+.btn {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.25rem;
+  }
+}
+
+footer {
+  font-family: 'Open Sans', sans-serif;
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 0.875rem;
+
+    @include media-breakpoint-up(md) {
+      font-size: 1rem;
+    }
+  }
+}
