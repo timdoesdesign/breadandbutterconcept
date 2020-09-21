@@ -38,6 +38,8 @@
         max-width: 330px;
         margin: 2rem auto;
         text-align: center;
+        color: $white;
+        display: block;
 
         @include media-breakpoint-up(md) {
           max-width: 100%;
