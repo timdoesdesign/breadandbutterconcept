@@ -1,4 +1,6 @@
 .navbar {
+  transition: all .2s ease-out;
+
   @include media-breakpoint-up(md) {
     @include padding-x(2rem);
   }
@@ -9,7 +11,13 @@
 
   &-scrolled {
     background-color: $primary;
-    transition: background-color 200ms linear;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    transition: all .2s ease-out;
+
+    img {
+      max-width: 48px !important;
+    }
   }
 
   &-brand img {
