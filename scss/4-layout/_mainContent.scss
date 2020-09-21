@@ -1,0 +1,7 @@
+.display-3 {
+  color: $white;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 32px;
+  }
+}
