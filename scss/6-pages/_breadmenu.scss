@@ -1,0 +1,28 @@
+.hero-bread {
+  background-image: url('../img/bread-loaf.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+
+  @include media-breakpoint-up(lg) {
+    background-size: cover;
+    background-position: bottom;
+  }
+
+  .wrapper-bread {
+    max-width: 57.5rem;
+
+    p {
+      line-height: 2;
+      @include media-breakpoint-up(lg) {
+        @include padding-x(3.5rem);
+      }
+    }
+
+    .phone {
+      @include media-breakpoint-down(xs) {
+        display: none;
+      }
+    }
+  }
+}
