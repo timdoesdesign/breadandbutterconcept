@@ -2,8 +2,18 @@
 $primary: #260801;
 $secondary: #733C1D;
 $tertiary: #D9C5C1;
-$cta-bg-color: #DD340E;
-$footer-bg-color: #323232;
+$accent: #DD340E;
 $white: #fff;
 $black: #000;
-$dark-overlay: rgba(0,0,0,0.5);
+$dark-overlay: rgba($black, .5);
+
+/* Body */
+$body-bg: $primary;
+
+/* Navbar */
+$navbar-dark-color: rgba($white, .6);
+$navbar-dark-hover-color: rgba($white, .8);
+
+/* Typography */
+$font-family-base: 'Open Sans', sans-serif;
+$headings-font-family: 'Lato', sans-serif;
