@@ -1,5 +1,5 @@
 .navbar {
-  transition: all .2s ease-out;
+  @include nav-shrink;
 
   @include media-breakpoint-up(md) {
     @include padding-x(2rem);
@@ -9,59 +9,54 @@
     @include padding-x(5.5rem);
   }
 
-  &-scrolled {
-    background-color: $primary;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-    transition: all .2s ease-out;
-
-    img {
-      max-width: 48px !important;
-    }
-  }
-
-  &-brand img {
+  &__logo {
     max-width: 48px;
+    @include nav-shrink;
 
     @include media-breakpoint-up(md) {
       max-width: 54px;
     }
   }
 
-  &-toggler {
-    background-color: $white;
-    width: 48px;
-    height: 42px;
-    border: 2px solid rgba($primary, 0.8);
+  &-scrolled {
+    background-color: $primary;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    @include nav-shrink;
 
-    &-icon {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-      background-position: center;
+    .navbar__logo {
+      max-width: 40px;
     }
   }
 
-  &-nav {
-    padding-left: 1.5rem;
+  &-toggler {
+    width: 48px;
+    height: 42px;
+    border: 2px solid $accent;
+  }
 
+  .nav-item {
     @include media-breakpoint-up(md) {
-      padding: 0;
-
-      li {
-        margin-left: 3rem;
-      }
+      margin-left: 3rem;
     }
+  }
+
+  .nav-link {
+    position: relative;
+    display: inline-block;
+    @include link-hover;
   }
 
   &-collapse {
     background-color: $secondary;
 
+    @include media-breakpoint-down(sm) {
+      margin-bottom: 1rem;
+    }
+
     @include media-breakpoint-up(md) {
       background-color: transparent;
       justify-content: flex-end;
-    }
-
-    a {
-      color: $white;
     }
   }
 
@@ -71,24 +66,20 @@
     }
 
     .nav-link {
-      transition: .3s;
-      position: relative;
 
       &:before {
         content: "";
         width: 100%;
         height: 2px;
-        background-color: $cta-bg-color;
+        background-color: $accent;
         position: absolute;
         bottom: 0;
         left: 0;
         opacity: 0;
-        transition: .3s;
+        @include link-hover;
       }
 
       &:hover {
-          color: $tertiary;
-
         &:before {
           opacity: 1;
         }
