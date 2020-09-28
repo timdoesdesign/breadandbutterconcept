@@ -1,7 +1,13 @@
-.display-3 {
-  color: $white;
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
 
-  @include media-breakpoint-down(sm) {
-    font-size: 32px;
-  }
+.dark-overlay {
+  background-color: $dark-overlay;
+}
+
+.card {
+  background-color: transparent;
 }
