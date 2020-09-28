@@ -1,8 +1,13 @@
 footer {
-  background-color: $footer-bg-color;
   color: $white;
 
   a {
     color: inherit;
+
+    @include media-breakpoint-down(sm) {
+      text-decoration: underline;
+      text-decoration-style: dotted;
+      text-decoration-color: $accent;
+    }
   }
 }
