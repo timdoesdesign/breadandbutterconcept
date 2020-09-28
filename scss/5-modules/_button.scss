@@ -1,29 +1,30 @@
 .btn {
   border-radius: 2px;
-  width: 8.75rem;
-  padding: .75rem 0;
+  @include padding-x(.875rem);
+  @include padding-y(.75rem);
 
   @include media-breakpoint-up(md) {
-    width: 14.5rem;
+    @include padding-x(2.5rem);
   }
 
   &--bread-menu {
-    background-color: $cta-bg-color;
+    background-color: $accent;
     color: $white;
-    margin-right: 1rem;
-  }
-
-  &--phone {
-    @extend .btn--bread-menu;
-    margin-right: 0;
-    @include media-breakpoint-up(sm) {
-      display: none;
-    }
   }
 
   &--cafe-menu {
     background-color: $white;
-    color: $cta-bg-color;
-    margin-left: 1rem;
+
+    &:hover {
+      background-color: rgba($white, .7);
+    }
+  }
+
+  &--phone {
+    @extend .btn--bread-menu;
+
+    @include media-breakpoint-up(sm) {
+      display: none;
+    }
   }
 }
