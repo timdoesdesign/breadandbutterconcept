@@ -4,23 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="img/breadandbutterlogo.svg"/>
+  <link rel="icon" type="image/png" href="img/breadandbutterlogo.svg" />
   <title>Bread &amp; Butter Bakery</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-md fixed-top justify-content-between pt-3">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top justify-content-between">
       <h1><a href="index.html" class="navbar-brand">
-          <img src="img/breadandbutterlogo.svg" alt="Bread and Butter Bakery Logo">
+          <img src="img/breadandbutterlogo.svg" alt="Bread and Butter Bakery Logo" class="navbar__logo">
         </a>
       </h1>
-      <button class="navbar-toggler p-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler p-0 bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+      <div class="collapse navbar-collapse rounded" id="navbarNav">
+        <ul class="navbar-nav pl-4 pl-md-0">
           <li class="nav-item active">
             <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
@@ -38,19 +39,21 @@
     </nav>
   </header>
 
-  <section class="hero hero-home">
+  <section class="hero hero--home jumbotron jumbotron-fluid m-0 p-0">
     <div class="dark-overlay">
       <div class="home-inner">
-        <h2>
+        <h2 class="px-3 text-center">
           <img src="img/breadandbutterlogo.jpg" alt="Bread and Butter Bakery Logo">
           <span class="subtitle">We are focused on crafting a good loaf</span>
         </h2>
-        <div class="wrapper">
-          <p>We have a seasonally rotating selection of breads that can be picked up from in-store.</p>
-          <p class="text-center">Tues &ndash; Sat 7am &ndash; 8pm | Sun 7am &ndash; 5:30pm</p>
-          <div class="btn-wrapper d-flex justify-content-center">
-            <a href="breadmenu.html" class="btn btn--bread-menu">View Selection</a>
-            <a href="cafemenu.html" class="btn btn--cafe-menu">Caf&eacute; Menu</a>
+        <div class="card">
+          <div class="card-body">
+            <p>We have a seasonally rotating selection of breads that can be picked up from in-store.</p>
+            <p class="text-center">Tues &ndash; Sat 7am &ndash; 8pm | Sun 7am &ndash; 5:30pm</p>
+            <div class="d-flex justify-content-center">
+              <a href="breadmenu.html" class="btn btn--bread-menu mx-2">View Selection</a>
+              <a href="cafemenu.html" class="btn btn--cafe-menu mx-2">Caf&eacute; Menu</a>
+            </div>
           </div>
         </div>
       </div>
@@ -59,22 +62,22 @@
 
 
   <section class="about">
-    <div class="dark-overlay">
-     <h2 class="sr-only">About</h2>
+    <h2 class="sr-only">About</h2>
+    <div class="wrapper">
       <p class="mb-0">We want everyone to have access to freshly and conscientiously made food. We love working and crafting something purposeful and tangible, creating something meaningful for our community, and being able to give people one more option to choose.</p>
     </div>
   </section>
 
-  <section class="support py-5">
-    <h2 class="text-center mb-4">We Support</h2>
-    <div class="img-wrapper">
+  <section class="support">
+    <h2 class="text-center mb-4 pb-4">We Support</h2>
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
       <img src="img/lindley-mills-logo.png" alt="Lindley Mills Logo">
       <img src="img/maple-view-logo.jpeg" alt="Maple View Logo">
       <img src="img/counter-culture.jpg" alt="Counter Culture Logo">
     </div>
   </section>
 
-  <footer class="py-5 text-center">
+  <footer class="pt-5 pb-3 text-center bg-dark">
     <div class="container">
       <h4 class="mb-4">
         <a href="https://www.facebook.com/BreadandButterBakery/" target="_blank">Connect with us on Facebook</a>
