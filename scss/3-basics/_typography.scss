@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Open+Sans&display=swap');
 
-//font-family: 'Lato', sans-serif;
-//font-family: 'Open Sans', sans-serif;
-
 h2 {
-  font-family: 'Lato', sans-serif;
   @include media-breakpoint-up(lg) {
     font-size: 2.5rem;
   }
@@ -15,8 +11,6 @@ h2 {
 
 p {
   font-size: 1rem;
-  line-height: 1.5;
-  font-family: 'Open Sans', sans-serif;
 
   @include media-breakpoint-up(md) {
     font-size: 1.25rem;
@@ -29,17 +23,15 @@ p {
 
 .nav-item {
   font-size: 1.25rem;
-  font-family: 'Open Sans', sans-serif;
 }
 
 .home-inner {
   .subtitle {
-    font-family: 'Lato', sans-serif;
     font-style: italic;
     font-size: 2rem;
   }
 
-  .wrapper {
+  .card-body {
     p:last-of-type {
       @include media-breakpoint-down(sm) {
         font-size: 0.875rem;
@@ -59,7 +51,6 @@ p {
 }
 
 .btn {
-  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
 
   @include media-breakpoint-up(md) {
@@ -68,7 +59,6 @@ p {
 }
 
 footer {
-  font-family: 'Open Sans', sans-serif;
 
   h4 {
     font-size: 1.25rem;
