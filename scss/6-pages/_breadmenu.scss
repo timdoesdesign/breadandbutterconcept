@@ -1,6 +1,10 @@
 .hero--bread {
-  background-image: url('../img/bread-loaf.jpg');
+  background-image: url('../img/bread-loaf-sm.jpg');
   background-position: center;
+
+  @include media-breakpoint-up(md) {
+    background-image: url('../img/bread-loaf.jpg');
+  }
 
   .home-inner {
     padding-bottom: 0;
