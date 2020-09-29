@@ -1,104 +1,60 @@
-.hero {
+.hero--home {
+  background-image: url('../img/bread-sm.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
 
-  &--home {
-    background-image: url('../img/bread-sm.jpg');
-    background-position: right;
-    background-repeat: no-repeat;
+  @include media-breakpoint-up(md) {
+    background-image: url('../img/bread.jpg');
+    background-position: center;
 
-    @include media-breakpoint-up(md) {
-      background-image: url('../img/bread.jpg');
-      background-position: center;
-
-      @include media-breakpoint-up(lg) {
-        background-attachment: fixed;
-      }
+    @include media-breakpoint-up(lg) {
+      background-attachment: fixed;
     }
   }
 
-  .home-inner {
-    padding-top: 8rem;
+  .card {
+    background-color: rgba($tertiary, 0.9);
 
-    @include media-breakpoint-up(md) {
-      padding-top: 8.75rem;
-      padding-bottom: 9rem;
-    }
-
-    img {
-      max-width: 30rem;
-    }
-
-    .subtitle {
-      max-width: 330px;
-      margin: 2rem auto;
-      text-align: center;
-      color: $white;
-      display: block;
-
-      @include media-breakpoint-up(md) {
-        max-width: 100%;
-      }
-
+    p {
       @include media-breakpoint-up(xl) {
-        @include margin-y(3rem);
-      }
-    }
-
-    .card {
-      background-color: rgba($tertiary, 0.9);
-      border-radius: 0;
-      border: 0;
-
-      @include media-breakpoint-up(md) {
-        border-radius: 2px;
-        @include margin-x(2rem);
-      }
-
-      @include media-breakpoint-up(lg) {
-        @include margin-x(5.5rem);
-      }
-
-      &-body {
-
-        @include media-breakpoint-up(md) {
-          padding: 1.5rem 2rem;
-        }
-
-        p {
-          color: $black;
-
-          &:last-of-type {
-            @include media-breakpoint-up(md) {
-              margin-bottom: 2rem;
-            }
-          }
-
-          @include media-breakpoint-up(xl) {
-            text-align: center;
-          }
-        }
+        text-align: center;
       }
     }
   }
 }
 
-.about {
-  background-color: $primary;
+.home-inner {
+  padding-top: 8rem;
 
-  .wrapper {
-    padding: 4.5rem 1rem;
+  @include media-breakpoint-up(md) {
+    padding-top: 8.75rem;
+    padding-bottom: 9rem;
+  }
+
+  img {
+    max-width: 30rem;
+  }
+
+  .subtitle {
+    max-width: 330px;
+    margin: 2rem auto;
+    text-align: center;
+    color: $white;
+    display: block;
 
     @include media-breakpoint-up(md) {
-      padding: 6rem 4.5rem
-    }
-
-    @include media-breakpoint-up(lg) {
-      padding: 8rem 5.5rem;
+      max-width: 100%;
     }
 
     @include media-breakpoint-up(xl) {
-      @include padding-x(7rem);
+      @include margin-y(3rem);
     }
   }
+}
+
+
+.about {
+  background-color: $primary;
 
   p {
     max-width: 61.25rem;
@@ -106,6 +62,7 @@
     margin: 0 auto;
   }
 }
+
 
 .support {
   background-color: $white;
