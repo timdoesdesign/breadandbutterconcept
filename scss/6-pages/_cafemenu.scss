@@ -1,6 +1,15 @@
 .hero--cafe {
-  background-image: url('../img/cafe.jpg');
+  background-image: url('../img/cafe-sm.jpg');
   background-position: center;
+
+  @include media-breakpoint-up(md) {
+    background-image: url('../img/cafe.jpg');
+    background-position: top;
+  }
+
+  @include media-breakpoint-up(md) {
+    background-image: url('../img/cafe-lg.jpg');
+  }
 
   .home-inner {
     padding-bottom: 4rem;
