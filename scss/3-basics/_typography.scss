@@ -4,6 +4,7 @@ h2 {
   @include media-breakpoint-up(lg) {
     font-size: 2.5rem;
   }
+
   @include media-breakpoint-up(xl) {
     font-size: 3rem;
   }
@@ -30,7 +31,9 @@ p {
     font-style: italic;
     font-size: 2rem;
   }
+}
 
+.hero--home {
   .card-body {
     p:last-of-type {
       @include media-breakpoint-down(sm) {
