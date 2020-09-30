@@ -4,3 +4,7 @@ $(function () {
     $nav.toggleClass('navbar-scrolled', $(this).scrollTop() > 50);
   });
 });
+
+$("#submit").click(function(event){
+  event.preventDefault();
+});
