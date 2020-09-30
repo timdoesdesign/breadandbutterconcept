@@ -23,7 +23,7 @@
   }
 
   &-scrolled {
-    background-color: $primary;
+    background-color: $secondary;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     @include nav-shrink;
@@ -52,7 +52,7 @@
   }
 
   &-collapse {
-    background-color: $secondary;
+    background-color: $primary;
 
     @include media-breakpoint-down(sm) {
       margin-bottom: 1rem;
