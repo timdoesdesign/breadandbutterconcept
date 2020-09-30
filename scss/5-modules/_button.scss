@@ -27,4 +27,13 @@
       display: none;
     }
   }
+
+  &--submit {
+    @extend .btn--bread-menu;
+    width: 8.5rem;
+
+    @include media-breakpoint-up(md) {
+      width: 10rem;
+    }
+  }
 }
