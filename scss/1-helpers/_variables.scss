@@ -1,7 +1,7 @@
 /* Colors */
 $primary: #733C1D;
 $secondary: #260801;
-$tertiary: #D9C5C1;
+$tertiary: lighten($primary, 60%);
 $accent: #DD340E;
 $white: #fff;
 $black: #000;
@@ -9,7 +9,7 @@ $dark-overlay: rgba($black, .6);
 $btn-focus-box-shadow: 0 0 0 .2rem rgba($black, .5);
 
 /* Body */
-$body-bg: $primary;
+$body-bg: $tertiary;
 
 /* Navbar */
 $navbar-dark-color: rgba($white, .85);
