@@ -28,6 +28,10 @@ p {
   @include media-breakpoint-up(lg) {
     font-size: 1.5rem;
   }
+
+  span {
+    font-size: 2rem;
+  }
 }
 
 .nav-item {
