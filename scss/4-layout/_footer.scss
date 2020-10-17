@@ -11,3 +11,10 @@ footer {
     }
   }
 }
+
+.phone--disable {
+  @include media-breakpoint-up(md) {
+    cursor: default;
+    pointer-events: none;
+  }
+}
