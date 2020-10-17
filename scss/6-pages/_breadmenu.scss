@@ -40,6 +40,15 @@
         background-color: rgba($black, .5);
         text-align: center;
 
+        @include media-breakpoint-up(xl) {
+          opacity: 0;
+          @include link-hover;
+
+          &:hover {
+            opacity: 1;
+          }
+        }
+
         span {
           width: 100%;
           font-family: 'Lato', sans-serif;
